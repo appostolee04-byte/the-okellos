@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to The Family — a collection of our family members, photographs, stories, and memories.">
+    <meta name="theme-color" content="#ff6b81">
+    <title>THE OKELLOS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">❤️</span>
+                <span>The Family</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navLinks">
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#members">Our Members</a>
+                <a href="#gallery">Photo Gallery</a>
+                <a href="#history">Our History</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Welcome section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">❤️ Together is our favourite place</span>
+                <h1>Welcome to <span>The Family</span></h1>
+                <p>
+                    One family, countless memories, and a love that keeps
+                    growing. This is our special place to celebrate our
+                    people, our stories, and our journey together.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#members" class="btn btn-primary">
+                        Meet Our Family,THE OKELLOS
+                    </a>
+                    <a href="#gallery" class="btn btn-light">
+                        Explore Our Photos
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong id="memberCount">0</strong>
+                        <span>Family Members</span>
+                    </div>
+                    <div>
+                        <strong id="photoCount">0</strong>
+                        <span>Memories Shared</span>
+                    </div>
+                    <div>
+                        <strong>∞</strong>
+                        <span>Love & Memories</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-wrap">
+                <img
+                    class="hero-image"
+                    src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1000&q=85"
+                    alt="A happy family spending time together"
+                >
+                <div class="floating-note">
+                    <span>🌈</span>
+                    <div>
+                        <strong>Our beautiful family</strong>
+                        <small>Our greatest blessing</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Welcome message -->
+        <section class="welcome-strip">
+            <div class="container welcome-inner">
+                <span class="welcome-emoji">🏡</span>
+                <div>
+                    <h2>Family is where our story begins</h2>
+                    <p>
+                        Every picture holds a memory. Every person has a
+                        story. Every moment makes us who we are.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Family members -->
+        <section class="section container" id="members">
+            <div class="section-heading">
+                <span class="eyebrow">THE PEOPLE WE LOVE</span>
+                <h2>Meet Our Family <span>👨‍👩‍👧‍👦</span></h2>
+                <p>
+                    Get to know the wonderful people who make our family
+                    special.
+                </p>
+            </div>
+
+            <div class="member-grid" id="memberGrid">
+                <!-- JavaScript adds family member cards here -->
+            </div>
+        </section>
+
+        <!-- Photo gallery -->
+        <section class="gallery-section" id="gallery">
+            <div class="container section">
+                <div class="section-heading">
+                    <span class="eyebrow">OUR PRECIOUS MOMENTS</span>
+                    <h2>Our Photo Gallery <span>📸</span></h2>
+                    <p>
+                        Little moments, big memories, and beautiful days
+                        we will always remember.
+                    </p>
+                </div>
+
+                <div class="gallery-tools">
+                    <label class="search-box">
+                        <span aria-hidden="true">🔎</span>
+                        <input
+                            type="search"
+                            id="gallerySearch"
+                            placeholder="Search photos or descriptions..."
+                            aria-label="Search photos"
+                        >
+                    </label>
+
+                    <div class="filter-buttons" id="filterButtons">
+                        <button class="filter-btn active" data-category="All">
+                            All Photos
+                        </button>
+                        <button class="filter-btn" data-category="Celebrations">
+                            🎂 Celebrations
+                        </button>
+                        <button class="filter-btn" data-category="Togetherness">
+                            🫶 Togetherness
+                        </button>
+                        <button class="filter-btn" data-category="Outings">
+                            🌍 Outings
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- JavaScript adds photographs here -->
+                </div>
+
+                <p class="empty-message" id="emptyMessage" hidden>
+                    No photos found. Try another search or category.
+                </p>
+            </div>
+        </section>
+
+        <!-- Family history -->
+        <section class="section container" id="history">
+            <div class="section-heading">
+                <span class="eyebrow">OUR ROOTS, OUR JOURNEY</span>
+                <h2>Our Family History <span>🌳</span></h2>
+                <p>
+                    A family is more than names and faces. It is a story
+                    passed from one generation to another.
+                </p>
+            </div>
+
+            <div class="history-intro">
+                <div class="history-icon">📖</div>
+                <div>
+                    <h3>Our Story, Our Heritage</h3>
+                    <p>
+                        The Family is built on love, unity, respect, and
+                        togetherness. Our journey is shaped by the people
+                        who came before us, the memories we share today,
+                        and the dreams we carry into tomorrow.
+                    </p>
+                    <p>
+                        This website is our family album — a place to
+                        preserve photographs, celebrate achievements,
+                        remember special occasions, and share our story
+                        with future generations.
+                    </p>
+                    <p>
+                        <strong>Our motto:</strong> Together we stand,
+                        together we grow, and together we create memories
+                        that last forever.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline" id="historyTimeline">
+                <!-- JavaScript adds history events here -->
+            </div>
+
+            <div class="history-note">
+                <span>💝</span>
+                <div>
+                    <h3>Our story is still being written</h3>
+                    <p>
+                        Every new generation, celebration, achievement,
+                        and reunion adds another beautiful chapter.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing banner -->
+        <section class="closing-banner">
+            <div class="container">
+                <span>❤️ 🧡 💛 💚 💙 💜</span>
+                <h2>Different hearts, one family.</h2>
+                <p>Our bond is our strength. Our memories are our treasure.</p>
+                <a href="#home" class="btn btn-light">Back to the Top ↑</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Photo viewing popup -->
+    <dialog class="photo-modal" id="photoModal"
+            aria-label="Photo viewer">
+        <button class="modal-close" id="modalClose"
+                aria-label="Close photo viewer">✕</button>
+
+        <img id="modalImage" src="" alt="">
+
+        <div class="modal-caption">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+            <small id="modalDate"></small>
+        </div>
+    </dialog>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#home" class="logo">
+                <span class="logo-icon">❤️</span>
+                <span>The Family</span>
+            </a>
+            <p>Made with love, for the people who matter most.</p>
+            <p class="copyright">
+                &copy; <span id="currentYear"></span> The Family.
+                All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
