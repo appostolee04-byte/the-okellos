@@ -8,7 +8,8 @@
     <meta name="theme-color" content="#ff6b81">
     <title>THE OKELLOS</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+<script src="script.js" defer></script>
 </head>
 <body>
 
@@ -157,6 +158,46 @@
                         </button>
                     </div>
                 </div>
+
+<section class="upload-section" id="uploadPhoto">
+  <div class="upload-card">
+    <h3>📸 Share a Family Memory</h3>
+    <p>Choose a photo and add it to THE OKELLOS family gallery.</p>
+
+    <form id="photoUploadForm">
+      <label for="uploaderName">Your name</label>
+      <input type="text" id="uploaderName"
+        maxlength="60" placeholder="Enter your name" required>
+
+      <label for="photoTitle">Photo caption</label>
+      <input type="text" id="photoTitle"
+        maxlength="100" placeholder="e.g. Our family reunion" required>
+
+      <label for="photoDescription">Short description</label>
+      <textarea id="photoDescription" maxlength="500"
+        placeholder="Tell us about this memory..." rows="3"></textarea>
+
+      <label for="photoCategory">Photo category</label>
+      <select id="photoCategory" required>
+        <option value="Celebrations">🎂 Celebrations</option>
+        <option value="Togetherness">🫶 Togetherness</option>
+        <option value="Outings">🌍 Outings</option>
+      </select>
+
+      <label for="photoFile">Choose your photo</label>
+      <input type="file" id="photoFile"
+        accept="image/jpeg,image/png,image/webp,image/gif" required>
+
+      <small>Images only. Maximum size: 5 MB.</small>
+
+      <button type="submit" id="uploadPhotoButton">
+        Upload Photo ❤️
+      </button>
+
+      <p id="uploadStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
 
                 <div class="gallery-grid" id="galleryGrid">
                     <!-- JavaScript adds photographs here -->
